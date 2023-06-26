@@ -298,6 +298,7 @@ body{
     position: absolute;
     top: 95%;
     right: 0;
+    z-index: 9;
 }
 .header__right-cart:hover>.top-cart-content{
     visibility: visible;
@@ -307,7 +308,6 @@ body{
     display: block;
     width: 100%;
     height: 420px;
-    margin-bottom: 30px;
 }
 .picture-link{
     width: 100%;
@@ -316,6 +316,81 @@ body{
 .picture-image{
     width: 100%;
     height: 420px;
+}
+.slick{
+    margin-bottom: 30px;
+}
+.slick-list{
+    width: 100%;
+}
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    left: 1.1px;
+    transform: translateY(-50%);
+    z-index: 9;
+    background-color: #cdcdcd;
+    border: none;
+    height: 60px;
+    width: 20px;
+    transition: 0.3s all;
+    cursor: pointer;
+    opacity: 0;
+    overflow: hidden;
+}
+.slick-prev:hover .slick-next:hover{
+    background-color: #EBCCCC;
+}
+.slick-next{
+    position: absolute;
+    top: 50%;
+    right: 1.1px;
+    transform: translateY(-50%);
+    z-index: 9;
+    background-color: #cdcdcd;
+    border: none;
+    height: 60px;
+    width: 20px;
+    transition: 0.3s all;
+    cursor: pointer;
+    opacity: 0;
+    overflow: hidden;
+}
+.slick-slider:hover>.slick-arrow{
+    opacity: 1;
+    overflow: visible;
+}
+.slick-dots{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    padding: 0;
+    text-align: center;
+}
+.slick-dots li{
+    display: inline-block;
+    list-style-type: none;
+}
+.slick-dots button{
+    
+    border: 1px #ebebeb solid;
+    width: 13px;
+    line-height: 11px;
+    padding: 0;
+    margin: 1px;
+    text-align: center;
+    text-indent: -999px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(255,255,255,0.6);
+    cursor: pointer;
+}
+.slick-dots .slick-active button{
+    background-color: white;
+}
+.slick-next .fa-angle-right{
+    float: none;
 }
 .main{
     display: block;
@@ -365,6 +440,8 @@ body{
 .section-head__center{
     width: 50%;
     display: inline-block;
+    position: relative;
+    padding-left: 40px;
 }
 .section-head__center-nav{
     width: 100%;
@@ -397,6 +474,21 @@ body{
 .section-body{
     width: 100%;
     height: 310px;
+    margin-bottom:30px ;
+}
+.section-body .slick-prev{
+    top: 43%;
+    left: -10px;
+    height: 50px;
+}
+.section-body .slick-next{
+    top: 43%;
+    right: -10px;
+    height: 50px;
+}
+.section-body .slick-prev:hover , .section-body .slick-next:hover{
+    background-color: white;
+    border: 1px #cdcdcd solid;
 }
 .section-body__box{
     display: inline-block;
@@ -436,21 +528,88 @@ body{
     background-color: #f7941d;
 }
 .section-body__box-center{
-    background-color: rgb(156, 156, 155);
-    height: 200px;
+    height: 180px;
     width: 100%;
     margin-top: 15px;
+    position: relative;
 }
 .section-body__box-link{
     width: 100%;
 }
+.section-body__box-link-hover{
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 1px;
+    opacity: 0;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    visibility: hidden;
+}
+.section-body__box-link-hover:hover{
+    background-color: red;
+    color: white;
+}
+.section-body__box-link-hover-image{
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+}
+.section-body__box-link-hover-image:hover{
+    color: white;
+}
+.section-body__box-form{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #FFF;
+    bottom: 0;
+    transition: all .3s;
+    margin: 0;
+}
+.btn-add-cart{
+    text-align: center;
+    width: 100%;
+    background: #ff3048;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    border: 1px #ff3048 solid;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+.btn-add-cart:hover{
+    background-color: white;
+    color: red;
+}
+.section-body__box:hover>.section-body__box-center>.section-body__box-link-hover
+{
+    opacity: 1;
+    visibility: visible;
+}
+.section-body__box:hover>.section-body__box-center>.section-body__box-form>.btn-add-cart{
+    opacity: 1;
+    visibility: visible;
+}
 .section-body__box-image{
     width: 100%;
-    height: 200px;
 }
 .section-body__box-bottom-name{
     font-size: 12px;
-    margin: 10px 0px 5px;
+    margin: 10px 1px 5px;
     overflow: hidden;
     height: 38px;
     font-weight: initial;
@@ -458,6 +617,9 @@ body{
 .section-body__box-bottom-name-link{
     color: black;
     text-decoration: none;
+}
+.section-body__box-bottom-name-link:hover{
+    color: red;
 }
 .section-body__box-bottom-item{
     display: block;
@@ -488,25 +650,27 @@ body{
 }
 .banner-link{
     width: 100%;
-    height: 575px;
 }
 .banner-image{
-    width: 100%;
-    height: 575px;
+   max-height: 630px;
 }
 .product{
     width: 75%;
-    height: 600px;
+    height: 630px;
 }
 .section-body__box-product{
-    padding-left: 11.8px;
+    position: relative;
+    padding-left: 12px;
     padding-right: 0;
     width: 23%;
-    height: 300px;
+    height: 315px;
     margin-bottom: 4px;
 }
 .section-body__box-product .section-body__box-center{
     margin: 0;
+}
+.body-box-center .section-body__box-link-hover{
+    left: 50%;
 }
 .section-body__box-product .section-body__box-tag{
     left:20px
@@ -708,7 +872,7 @@ p{
 }
 .sub-socials{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .sub-container{
     display: flex;
@@ -787,7 +951,7 @@ h4::before{
     content: '';
     position: absolute;
     left: 0;
-    bottom: 20px;
+    bottom: 5px;
     width: 50px;
     height: 1px;
     background: #000;
@@ -812,7 +976,7 @@ h4::before{
     display: inline-block;
 }
 .footer-container-list-box{
-    padding-top:28px
+    padding-top:6px
 }
 .maps-image , .phone-image , .mail-image{
     padding-right: 10px;

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -186,11 +192,18 @@
             </div>
         </div>
     </div>
-    <picture class="picture">
-        <a href="" class="picture-link" title="Giày dép">
-            <img src="https://bizweb.dktcdn.net/100/405/012/themes/793822/assets/slider_1.jpg?1677034434901" alt="" class="picture-image">
-        </a>
-    </picture>
+    <div class="slick">
+        <picture class="picture">
+            <a href="" class="picture-link" title="Giày dép">
+                <img src="https://bizweb.dktcdn.net/100/405/012/themes/793822/assets/slider_1.jpg?1677034434901" alt="" class="picture-image">
+            </a>
+        </picture>
+        <picture class="picture">
+            <a href="" class="picture-link" title="Giày dép">
+                <img src="https://bizweb.dktcdn.net/100/405/012/themes/793822/assets/slider_1.jpg?1677034434901" alt="" class="picture-image">
+            </a>
+        </picture>
+    </div>
     <main class="main">
         <section class="section">
             <div class="section-head">
@@ -218,14 +231,47 @@
             <div class="section-body">
                 <div class="section-body__box">
                     <div class="section-body__box-tag">
+                        <span class="section-body__box-tag-hot tag-flash">Hot</span>
+                        <span class="section-body__box-tag-new tag-flash">New</span>
+                    </div>
+                    <div class="section-body__box-center">
+                        <a href="#" class="section-body__box-link">
+                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product12-5db18680-51cf-418c-ba51-b5240ce020d8.jpg?v=1609149216970" alt="Chuck Taylor All Star Peace Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Peace Hi Top">
+                        </a>
+                        <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                            <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                        </a>
+                        <form action="/" method="post" class="section-body__box-form">
+                            <input type="hidden" name="variantId" value="">
+                            <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                        </form>
+                    </div>
+                    <div class="section-body__box-bottom">
+                        <h3 class="section-body__box-bottom-name">
+                            <a href="#" title="Chuck Taylor All Star Peace Hi Top" class="section-body__box-bottom-name-link">Chuck Taylor All Star Peace Hi Top</a>
+                        </h3>
+                        <div class="section-body__box-bottom-item">
+                            <span class="section-body__box-bottom-item-special">1.600.000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-body__box">
+                    <div class="section-body__box-tag">
                         <span class="section-body__box-tag-sale tag-flash">-10%</span>
                         <span class="section-body__box-tag-hot tag-flash">Hot</span>
                         <span class="section-body__box-tag-new tag-flash">New</span>
                     </div>
                     <div class="section-body__box-center">
                         <a href="#" class="section-body__box-link">
-                                <img src="//bizweb.dktcdn.net/thumb/large/100/405/012/products/product11-57136de0-d23c-450e-a2ba-7c4fda358e2a.jpg?v=1609149207157" alt="Chuck Taylor All Star 1970s Clean N Preme Low Top" class="section-body__box-image">
+                                <img src="//bizweb.dktcdn.net/thumb/large/100/405/012/products/product11-57136de0-d23c-450e-a2ba-7c4fda358e2a.jpg?v=1609149207157" alt="Chuck Taylor All Star 1970s Clean N Preme Low Top" class="section-body__box-image" title="Chuck Taylor All Star 1970s Clean N Preme Low Top">
                         </a>
+                        <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                            <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                        </a>
+                        <form action="/" method="post" class="section-body__box-form">
+                            <input type="hidden" name="variantId" value="">
+                            <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                        </form>
                     </div>
                     <div class="section-body__box-bottom">
                         <h3 class="section-body__box-bottom-name">
@@ -244,8 +290,15 @@
                     </div>
                     <div class="section-body__box-center">
                         <a href="#" class="section-body__box-link">
-                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product10-8975ded1-c218-4ded-b95f-df238843cef5.jpg?v=1609149198293" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product10-8975ded1-c218-4ded-b95f-df238843cef5.jpg?v=1609149198293" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top">
                         </a>
+                        <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                            <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                        </a>
+                        <form action="/" method="post" class="section-body__box-form">
+                            <input type="hidden" name="variantId" value="">
+                            <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                        </form>
                     </div>
                     <div class="section-body__box-bottom">
                         <h3 class="section-body__box-bottom-name">
@@ -264,8 +317,15 @@
                     </div>
                     <div class="section-body__box-center">
                         <a href="#" class="section-body__box-link">
-                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product9.jpg?v=1609148411950" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product9.jpg?v=1609148411950" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top"> 
                         </a>
+                        <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                            <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                        </a>
+                        <form action="/" method="post" class="section-body__box-form">
+                            <input type="hidden" name="variantId" value="">
+                            <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                        </form>
                     </div>
                     <div class="section-body__box-bottom">
                         <h3 class="section-body__box-bottom-name">
@@ -285,8 +345,15 @@
                     <div class="section-body__box-center">
                         <a href="#" class="section-body__box-link">
                                 <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product8.jpg?v=1609148404000" alt="
-                                Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top">
                         </a>
+                        <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                            <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                        </a>
+                        <form action="/" method="post" class="section-body__box-form">
+                            <input type="hidden" name="variantId" value="">
+                            <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                        </form>
                     </div>
                     <div class="section-body__box-bottom">
                         <h3 class="section-body__box-bottom-name">
@@ -305,8 +372,15 @@
                     </div>
                     <div class="section-body__box-center">
                         <a href="#" class="section-body__box-link">
-                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product7.jpg?v=1609148395360" alt="Chuck Taylor All Star Logo Play" class="section-body__box-image">
+                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product7.jpg?v=1609148395360" alt="Chuck Taylor All Star Logo Play" class="section-body__box-image" title="Chuck Taylor All Star Logo Play">
                         </a>
+                        <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                            <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                        </a>
+                        <form action="/" method="post" class="section-body__box-form">
+                            <input type="hidden" name="variantId" value="">
+                            <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                        </form>
                     </div>
                     <div class="section-body__box-bottom">
                         <h3 class="section-body__box-bottom-name">
@@ -323,8 +397,15 @@
                     </div>
                     <div class="section-body__box-center">
                         <a href="#" class="section-body__box-link">
-                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product6-6dc3d5ba-4047-4708-84a7-7812dc0d79ca.jpg?v=1609208956667" alt="Chuck Taylor All Star East Village Explore" class="section-body__box-image">
+                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product6-6dc3d5ba-4047-4708-84a7-7812dc0d79ca.jpg?v=1609208956667" alt="Chuck Taylor All Star East Village Explore" class="section-body__box-image" title="Chuck Taylor All Star East Village Explore">
                         </a>
+                        <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                            <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                        </a>
+                        <form action="/" method="post" class="section-body__box-form">
+                            <input type="hidden" name="variantId" value="">
+                            <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                        </form>
                     </div>
                     <div class="section-body__box-bottom">
                         <h3 class="section-body__box-bottom-name">
@@ -369,10 +450,17 @@
                                 <span class="section-body__box-tag-hot tag-flash">Hot</span>
                                 <span class="section-body__box-tag-new tag-flash">New</span>
                             </div>
-                            <div class="section-body__box-center">
+                            <div class="section-body__box-center body-box-center">
                                 <a href="#" class="section-body__box-link">
-                                        <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product12-5db18680-51cf-418c-ba51-b5240ce020d8.jpg?v=1609149216970" alt="Chuck Taylor All Star Peace Hi Top" class="section-body__box-image">
+                                        <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product12-5db18680-51cf-418c-ba51-b5240ce020d8.jpg?v=1609149216970" alt="Chuck Taylor All Star Peace Hi Top " class="section-body__box-image" title="Chuck Taylor All Star Peace Hi Top">
                                 </a>
+                                <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                    <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                                </a>
+                                <form action="/" method="post" class="section-body__box-form">
+                                    <input type="hidden" name="variantId" value="">
+                                    <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                                </form>
                             </div>
                             <div class="sectio-body__box-bottom">
                                 <h3 class="section-body__box-bottom-name">
@@ -389,10 +477,17 @@
                             <span class="section-body__box-tag-hot tag-flash">Hot</span>
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="//bizweb.dktcdn.net/thumb/large/100/405/012/products/product11-57136de0-d23c-450e-a2ba-7c4fda358e2a.jpg?v=1609149207157" alt="Chuck Taylor All Star 1970s Clean N Preme Low Top" class="section-body__box-image">
+                                    <img src="//bizweb.dktcdn.net/thumb/large/100/405/012/products/product11-57136de0-d23c-450e-a2ba-7c4fda358e2a.jpg?v=1609149207157" alt="Chuck Taylor All Star 1970s Clean N Preme Low Top" class="section-body__box-image" title="Chuck Taylor All Star 1970s Clean N Preme Low Top">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -409,10 +504,17 @@
                             <span class="section-body__box-tag-sale tag-flash">-30%</span>
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product10-8975ded1-c218-4ded-b95f-df238843cef5.jpg?v=1609149198293" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product10-8975ded1-c218-4ded-b95f-df238843cef5.jpg?v=1609149198293" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -429,10 +531,17 @@
                             <span class="section-body__box-tag-sale tag-flash">-40%</span>
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product9.jpg?v=1609148411950" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product9.jpg?v=1609148411950" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -449,11 +558,18 @@
                             <span class="section-body__box-tag-sale tag-flash">-50%</span>
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
                                     <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product8.jpg?v=1609148404000" alt="
-                                    Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                    Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -470,10 +586,17 @@
                         <div class="section-body__box-tag">
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product7.jpg?v=1609148395360" alt="Chuck Taylor All Star Logo Play" class="section-body__box-image">
+                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product7.jpg?v=1609148395360" alt="Chuck Taylor All Star Logo Play" class="section-body__box-image" title="Chuck Taylor All Star Logo Play">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -488,10 +611,17 @@
                         <div class="section-body__box-tag">
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product6-6dc3d5ba-4047-4708-84a7-7812dc0d79ca.jpg?v=1609208956667" alt="Chuck Taylor All Star East Village Explore" class="section-body__box-image">
+                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product6-6dc3d5ba-4047-4708-84a7-7812dc0d79ca.jpg?v=1609208956667" alt="Chuck Taylor All Star East Village Explore" class="section-body__box-image" title="Chuck Taylor All Star East Village Explore">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -507,10 +637,17 @@
                                 <span class="section-body__box-tag-sale tag-flash">-18%</span>
                                 <span class="section-body__box-tag-new tag-flash">New</span>
                             </div>
-                            <div class="section-body__box-center">
+                            <div class="section-body__box-center body-box-center">
                                 <a href="#" class="section-body__box-link">
-                                        <img src="https://bizweb.dktcdn.net/100/405/012/products/product5.jpg?v=1609148378690" alt="Converse Chuck Taylor All Star Utility" class="section-body__box-image">
+                                        <img src="https://bizweb.dktcdn.net/100/405/012/products/product5.jpg?v=1609148378690" alt="Converse Chuck Taylor All Star Utility" class="section-body__box-image" title="Converse Chuck Taylor All Star Utility">
                                 </a>
+                                <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                    <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                                </a>
+                                <form action="/" method="post" class="section-body__box-form">
+                                    <input type="hidden" name="variantId" value="">
+                                    <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                                </form>
                             </div>
                             <div class="section-body__box-bottom">
                                 <h3 class="section-body__box-bottom-name">
@@ -558,10 +695,17 @@
                                 <span class="section-body__box-tag-hot tag-flash">Hot</span>
                                 <span class="section-body__box-tag-new tag-flash">New</span>
                             </div>
-                            <div class="section-body__box-center">
+                            <div class="section-body__box-center body-box-center">
                                 <a href="#" class="section-body__box-link">
-                                        <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product12-5db18680-51cf-418c-ba51-b5240ce020d8.jpg?v=1609149216970" alt="Chuck Taylor All Star Peace Hi Top" class="section-body__box-image">
+                                        <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product12-5db18680-51cf-418c-ba51-b5240ce020d8.jpg?v=1609149216970" alt="Chuck Taylor All Star Peace Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Peace Hi Top">
                                 </a>
+                                <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                    <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                                </a>
+                                <form action="/" method="post" class="section-body__box-form">
+                                    <input type="hidden" name="variantId" value="">
+                                    <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                                </form>
                             </div>
                             <div class="section-body__box-bottom">
                                 <h3 class="section-body__box-bottom-name">
@@ -578,10 +722,17 @@
                             <span class="section-body__box-tag-hot tag-flash">Hot</span>
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="//bizweb.dktcdn.net/thumb/large/100/405/012/products/product11-57136de0-d23c-450e-a2ba-7c4fda358e2a.jpg?v=1609149207157" alt="Chuck Taylor All Star 1970s Clean N Preme Low Top" class="section-body__box-image">
+                                    <img src="//bizweb.dktcdn.net/thumb/large/100/405/012/products/product11-57136de0-d23c-450e-a2ba-7c4fda358e2a.jpg?v=1609149207157" alt="Chuck Taylor All Star 1970s Clean N Preme Low Top" class="section-body__box-image" title="Chuck Taylor All Star 1970s Clean N Preme Low Top">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -598,10 +749,17 @@
                             <span class="section-body__box-tag-sale tag-flash">-30%</span>
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product10-8975ded1-c218-4ded-b95f-df238843cef5.jpg?v=1609149198293" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product10-8975ded1-c218-4ded-b95f-df238843cef5.jpg?v=1609149198293" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -618,10 +776,17 @@
                             <span class="section-body__box-tag-sale tag-flash">-40%</span>
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product9.jpg?v=1609148411950" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product9.jpg?v=1609148411950" alt="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title="Chuck Taylor All Star Chuck Taylor Cheerful Hi Top">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -638,11 +803,18 @@
                             <span class="section-body__box-tag-sale tag-flash">-50%</span>
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
                                     <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product8.jpg?v=1609148404000" alt="
-                                    Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image">
+                                    Chuck Taylor All Star Chuck Taylor Cheerful Hi Top" class="section-body__box-image" title=" Chuck Taylor All Star Chuck Taylor Cheerful Hi Top">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -659,10 +831,17 @@
                         <div class="section-body__box-tag">
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product7.jpg?v=1609148395360" alt="Chuck Taylor All Star Logo Play" class="section-body__box-image">
+                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product7.jpg?v=1609148395360" alt="Chuck Taylor All Star Logo Play" class="section-body__box-image" title="Chuck Taylor All Star Logo Play">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -677,10 +856,17 @@
                         <div class="section-body__box-tag">
                             <span class="section-body__box-tag-new tag-flash">New</span>
                         </div>
-                        <div class="section-body__box-center">
+                        <div class="section-body__box-center body-box-center">
                             <a href="#" class="section-body__box-link">
-                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product6-6dc3d5ba-4047-4708-84a7-7812dc0d79ca.jpg?v=1609208956667" alt="Chuck Taylor All Star East Village Explore" class="section-body__box-image">
+                                    <img src="https://bizweb.dktcdn.net/thumb/medium/100/405/012/products/product6-6dc3d5ba-4047-4708-84a7-7812dc0d79ca.jpg?v=1609208956667" alt="Chuck Taylor All Star East Village Explore" class="section-body__box-image" title="Chuck Taylor All Star East Village Explore">
                             </a>
+                            <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                            </a>
+                            <form action="/" method="post" class="section-body__box-form">
+                                <input type="hidden" name="variantId" value="">
+                                <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                            </form>
                         </div>
                         <div class="section-body__box-bottom">
                             <h3 class="section-body__box-bottom-name">
@@ -696,10 +882,17 @@
                                 <span class="section-body__box-tag-sale tag-flash">-18%</span>
                                 <span class="section-body__box-tag-new tag-flash">New</span>
                             </div>
-                            <div class="section-body__box-center">
+                            <div class="section-body__box-center body-box-center">
                                 <a href="#" class="section-body__box-link">
-                                        <img src="https://bizweb.dktcdn.net/100/405/012/products/product5.jpg?v=1609148378690" alt="Converse Chuck Taylor All Star Utility" class="section-body__box-image">
+                                        <img src="https://bizweb.dktcdn.net/100/405/012/products/product5.jpg?v=1609148378690" alt="Converse Chuck Taylor All Star Utility" class="section-body__box-image" title="Converse Chuck Taylor All Star Utility">
                                 </a>
+                                <a href="" class="section-body__box-link-hover" title="Xem nhanh">
+                                    <i class="fa-solid fa-magnifying-glass section-body__box-link-hover-image"></i>
+                                </a>
+                                <form action="/" method="post" class="section-body__box-form">
+                                    <input type="hidden" name="variantId" value="">
+                                    <button class="btn-add-cart" title="Mua hàng">Mua hàng</button>
+                                </form>
                             </div>
                             <div class="section-body__box-bottom">
                                 <h3 class="section-body__box-bottom-name">
@@ -1126,6 +1319,18 @@
             </div>
         </div>
     </footer>
-
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-1.11.0.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script src="./main.js"></script>
 </body>
 </html>
