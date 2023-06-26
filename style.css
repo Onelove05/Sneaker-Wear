@@ -1,11 +1,13 @@
 body{
     display: block;
-    margin: 0;
     font-family: "Roboto" , sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000;
+    margin: auto;
 }
 .header{
     width: 100%;
-    display: block;
     background-color: white;
 }
 .header__container{
@@ -178,40 +180,128 @@ body{
 .header__right-search , .header__right-user ,  .header__right-cart{
  padding: 31px 10px;
  margin: auto;
+ position: relative;
 }
-.header__right-search{
-    position: relative;
-}
-.header__right-search-image{
+.header__right-search-image , .header__right-cart-image , .header__right-user-image{
     cursor: pointer;
 }
-.form-search{
+.count_item_pr{
     position: absolute;
-    right: -70px;
-    top: 92%;
+    right: 4px;
+    top: 27px;
+    background: #ff3048;
+    width: 16px;
+    line-height: 16px;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    font-style: initial;
+}
+.header__right-search:hover>.form-search{
+    opacity: 1;
+    visibility: visible;
+}
+.form-search{
+    visibility: hidden;
+    position: absolute;
+    top: 96%;
     width: 300px;
     margin: 0;
     z-index: 9;
-    display: none;
+    display: flex;
+    right: -50px;
+    opacity: 0;
 }
 .form-search-input{
     height: 30px;
+    border: none;
     padding: 0 50px 0 10px
 }
 .btn-icon{
-    position: absolute;
-    top: 4px;
-    right: 75px;
-    height: 28px;
+    height: 30px;
     width: 30px;
-    text-align: center;
-    padding: 0;
     border: 0 none;
 }
 .btn-icon-image{
     border: 0 none;
     max-width: 100%;
     height: auto;
+}
+.header__right-user:hover>.account{
+    opacity: 1;
+    visibility: visible;
+}
+.account{
+    position: absolute;
+    z-index: 9;
+    top: 95%;
+    right: -5px;
+    opacity: 0;
+    width: 120px;
+    padding: 5px;
+    background: #FFF;
+    border: 1px #ebebeb solid;
+    visibility: hidden;
+}
+.account-login{
+    display: block;
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    padding-bottom: 0;
+}
+.account-register{
+    
+    display: block;
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.account-login:hover , .account-register:hover{
+    color: red;
+}
+.account-login-facebook{
+    background: #4064ac;
+    color: #FFF;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    text-decoration:none;
+}
+.account-login-facebook:hover{
+    background-color: #324e87;
+}
+.account-login-google{
+    background: #e34133;
+    margin: 0;
+    color: #FFF;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    text-decoration:none;
+}
+.account-login-google:hover{
+    background-color: #c8291b;
+}
+.top-cart-content{
+    max-height: 300px;
+    width: 300px;
+    padding: 10px;
+    border: solid 1px #ebebeb;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    top: 95%;
+    right: 0;
+}
+.header__right-cart:hover>.top-cart-content{
+    visibility: visible;
+    opacity: 1;
 }
 .picture{
     display: block;
@@ -391,21 +481,6 @@ body{
 }
 .banner{
     width: 25%;
-}
-.banner::after{
-    background: rgba(255,255,255,0.1);
-    content: '';
-    z-index: 0;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-}
-.banner::before{
-    left: -100%;
-    top: -100%;
 }
 .banner::after:hover {
     left: 0;
