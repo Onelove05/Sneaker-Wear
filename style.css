@@ -626,7 +626,6 @@ body{
 .quickview-product-box{
     display: flex;
     position: absolute;
-    width: 1030px;
     top: 5%;
     height: auto;
     margin: 0 auto;
