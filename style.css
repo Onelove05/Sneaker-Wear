@@ -872,7 +872,7 @@ body{
 .list-product-banner{
     display: flex;
     width: 100%;
-    height: 600px;
+    margin-top: 30px;
 }
 .banner{
     width: 25%;
@@ -909,10 +909,10 @@ body{
     left:20px
 }
 .section-head-sale{
-    margin-top: 30px;
+    margin-top: 320px;
 }
 .section-product-mini{
-    margin-top: 20px;
+    margin-top: 320px;
 }
 .section-product-mini .section-head__left{
     width: 30%;
@@ -927,8 +927,8 @@ div .product-box-mini-4 , div .product-box-mini-8{
 }
 .product-box-mini{
     display: flex;
-    width: 23%;
-    height: 100px;
+    width: 23% !important;
+    height: 100px !important;
     border: 1px #ebebeb solid;
     padding: 5px;
     float: left;
@@ -966,8 +966,14 @@ div .product-box-mini-4 , div .product-box-mini-8{
     text-decoration: none;
     color: black;
 }
+.product-name-link:hover{
+    color: red;
+}
+.product-item{
+    margin-top: -5px;
+}
 .product-item-price{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     display: block;
     color: red;
@@ -980,7 +986,7 @@ div .product-box-mini-4 , div .product-box-mini-8{
 .section2{
     display: block;
     width: 100%;
-    margin-top:300px;
+    margin-top:200px;
 }
 .section-blogs{
     width: 100%;
@@ -1012,7 +1018,7 @@ h2{
     color: black;
     font-weight: bold;
 }
-.section-blog-title-link:hover{
+.section-blogs-list-link:hover{
     color: red;
 }
 .section-blog-title-paragraph{
@@ -1066,7 +1072,7 @@ h3{
 }
 .section-blogs-list-link{
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     color: black;
 }
